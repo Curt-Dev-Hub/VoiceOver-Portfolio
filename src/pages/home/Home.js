@@ -19,9 +19,9 @@ function Home() {
         <div className="wrapper-home">
             <header>
                 { windowWidth > 500 ? (
-                <img className='headerImage' src={mediumImage} alt='You aint seeing shit' />
+                <img className='headerImage' src={mediumImage} alt='Picture of a set of headphones on a 50 50 split pink and light blue background' />
                 ) : (
-                <img className='headerImage' src={smallImage} alt='You aint seeing shit' />
+                <img className='headerImage' src={smallImage} alt='Picture of a set of headphones on a 50 50 split pink and light blue background' />
                 )}
                 <h1>Curtis King</h1>
                 <hr></hr>
