@@ -1,0 +1,235 @@
+.socials {
+    font-size: 30px;
+    min-width: fit-content;
+    align-self: baseline;
+    margin-top: 10px;
+}
+
+/* styling for social icons -------------------------------- */
+
+.linkedin-icon {
+    color: midnightblue;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.twitter-icon {
+    color: dodgerblue;
+}
+
+.insta-icon {
+    background-image: linear-gradient(to top right,#f9ce34,#ee2a7b,#6228d7);
+    border-radius: 5px;
+}
+
+.pinterest-icon {
+    color: red;
+    background: aliceblue;
+    border-radius: 20px;
+}
+
+.nav-container {
+    background-color: #7dc2f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.email-a {
+    font-family:monospace;
+    font-size: 1rem;
+    text-decoration: none;
+    vertical-align: super;
+    color: inherit;
+}
+
+.icons {
+    font-size: 20px;
+    margin: 3px;
+}
+
+.paragraph-email {
+    margin: 3px;
+    display: inline-flex;
+}
+
+
+nav {
+    /* background-color: #7dc2f0; */
+    color: rgb(8, 25, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* align bars and xmark icons centrally */
+
+.bars-icon, .xmark-icon {
+    align-self: center;
+    font-size: 21px;
+}
+
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+  
+nav .desktop-menu {
+    font-family: 'Indie Flower', cursive;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    /* gap: 1rem; */ /* can be reduced to 0.5 for better spacing on smaller screens */
+    gap: 2%;
+}
+
+nav .mobile-menu {
+    font-family: 'Indie Flower', cursive;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 46px;  /* can reduce this if necessary */
+    left: 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: #00ffff4f;
+    padding: 0; /* remove padding from left of ul container */
+    width: 100vw;
+    /* properties added in for slide effect */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+nav .mobile-menu.open {
+    /* this may need to be adjusted to match the true height of the menu */
+    height: 216px;
+}
+
+nav .mobile-menu {
+    transform: translateX(0);
+}
+
+nav > .mobile-menu > li { /* will need to add anchor to this - routing */
+    width: 100vw;
+    padding: 1rem 0;
+    /* visibility: collapse;  removed as not needed for slide effect on menu*/
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bolder;
+}
+
+nav > .mobile-menu > li { /* will need to add anchor to this - routing*/
+    opacity: 1;
+}
+
+nav li {
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+nav li.active {
+    background-color: #777;
+}
+  
+nav li:hover {
+    background-color: #1b78a39f;
+}
+
+.envelope-icon {
+    color: ghostwhite;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav > .desktop-menu {
+        display: none;
+    }
+
+    nav > .mobile-menu {
+        display: flex;
+    }
+/* change height and layout of nav and background image*/
+    .nav-container {
+        flex-direction: column;
+        height: 135px;
+        padding: 7px;
+    }
+
+    .contact-container {
+        align-self: center;
+        align-items: center;
+    }
+
+    nav {
+        gap: 1rem;
+        padding: 0 4px;
+    }
+
+    .header-image {
+        height: 135px
+    }
+
+    nav > .mobile-menu.open {
+        top: 109px;
+    }
+
+    .mobile-menu-icon {
+        position: fixed;
+        right: 5px;
+        top: 5px;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+
+    .bars-icon, .xmark-icon {
+        display: none;
+    }
+
+    nav {
+        width: 55%;
+    }
+
+    .contact-container {
+        width: 25%;
+        align-items: end;
+    }
+}
+
+
+@media screen and (min-width: 830px) {
+
+    nav {
+        width: 66%;
+    }
+
+    nav > .desktop-menu {
+        gap: 8%;
+    }
+
+    .desktop-menu {
+        width: 70%;
+    }
+}

@@ -1,0 +1,53 @@
+header {
+    color: #141324db;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'Atma', cursive;
+}
+
+h1 {
+    font-size: 76px;
+    margin-top: 2px; /* 🧪 */ 
+
+}
+
+h2 {
+    font-style: italic;
+}
+
+.headerImage {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 393px;
+    /* top: 150px;  experimenting with taking this out 🧪 */
+    z-index: -1;
+}
+
+hr {
+    border-top: 2px solid #141324db;
+    width: 60%;
+}
+
+.wrapper-home {
+    /* margin-top: 166px; 🧪 */
+    text-align: center;
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 845px) {
+
+    hr {
+        width: 49%;
+    }
+    
+}
