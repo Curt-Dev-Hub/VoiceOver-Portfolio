@@ -1,11 +1,17 @@
-.socials {
-    font-size: 30px;
-    min-width: fit-content;
-    align-self: baseline;
-    margin-top: 10px;
+nav {
+    /* background-color: #7dc2f0; */
+    color: rgb(8, 25, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-/* styling for social icons -------------------------------- */
+/* styling for social icons ----------------------------------------------------------------- */
 
 .linkedin-icon {
     color: midnightblue;
@@ -27,13 +33,13 @@
     background: aliceblue;
     border-radius: 20px;
 }
-
+/* --------------------------------------------------------------------------- */
 .nav-container {
-    background-color: #7dc2f0;
     display: flex;
     justify-content: space-between;
 }
 
+/* wrapper for all contact links */
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -41,6 +47,7 @@
     justify-content: center;
 }
 
+/* a tag styling for email mailto */
 .email-a {
     font-family:monospace;
     font-size: 1rem;
@@ -49,37 +56,17 @@
     color: inherit;
 }
 
+/* styling all icons in component */
 .icons {
     font-size: 20px;
     margin: 3px;
 }
 
+/* vertically align envelope icon and paragraph element */
 .paragraph-email {
     margin: 3px;
     display: inline-flex;
 }
-
-
-nav {
-    /* background-color: #7dc2f0; */
-    color: rgb(8, 25, 58);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-/* align bars and xmark icons centrally */
-
-.bars-icon, .xmark-icon {
-    align-self: center;
-    font-size: 21px;
-}
-
 
 nav a {
     color: inherit;
@@ -109,13 +96,14 @@ nav .mobile-menu {
     left: 0;
     list-style-type: none;
     text-align: center;
-    background-color: #00ffff4f;
+    background-color: #05102fcf;
     padding: 0; /* remove padding from left of ul container */
     width: 100vw;
     /* properties added in for slide effect */
     height: 0;
     overflow: hidden;
     transition: height 0.4s ease;
+    color: aliceblue;
 }
 
 nav .mobile-menu.open {
@@ -130,11 +118,11 @@ nav .mobile-menu {
 nav > .mobile-menu > li { /* will need to add anchor to this - routing */
     width: 100vw;
     padding: 1rem 0;
-    /* visibility: collapse;  removed as not needed for slide effect on menu*/
     align-self: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     font-weight: bolder;
+    border-bottom: 1px solid dodgerblue;
 }
 
 nav > .mobile-menu > li { /* will need to add anchor to this - routing*/
@@ -153,7 +141,7 @@ nav li.active {
 }
   
 nav li:hover {
-    background-color: #1b78a39f;
+    background-color: #d7196982;
 }
 
 .envelope-icon {

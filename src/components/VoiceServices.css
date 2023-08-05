@@ -1,3 +1,100 @@
+
+ul {
+    list-style: none;
+}
+
+.services-list-wrap > ul > li {
+    padding: 7px;
+}
+
+h3 {
+    font-size: 29px;
+}
+
+/* Main component / outer wrapper */
 .servicesWrapper {
-    
+    font-family: Georgia, serif;
+    background-color: #20303e1a;
+    border-radius: 20px;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/*  wrapper for 2 ul's mic image and link button to samples pages */
+.services-list-wrap {
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* innermost wrapper for mic image and link button */
+.samples-link {
+    width: 91%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.services-list-wrap > ul {
+    padding: 0;  /* remove default padding from ul */
+}
+
+/* image styling */
+.samples-image {
+    height: 202px;
+    width: 202px;
+    opacity: 0.7;
+    border-radius: 2px;
+    margin: 19px;
+}
+
+/* link button styling */
+.sample-anchor {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* link button remove default styling */
+button[type="button"] {
+    background: transparent;
+    border: 1px solid #0404226e;
+    border-radius: 3px;
+    padding: 9px;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    .services-list-wrap {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .servicesWrapper {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-height: 620px) {
+    .servicesWrapper {
+        margin-top: 32%;
+    }
+}
+
+@media screen and (min-height: 873px) {
+    .servicesWrapper {
+        margin-top: 50%;
+    }
+}
+
+@media screen and (min-height: 1139px) {
+    .servicesWrapper {
+        margin-top: 40%;
+    }
 }

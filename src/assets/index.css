@@ -4,6 +4,7 @@ html {
   width: 100vw;
   background: rgb(249,191,191);
   background: linear-gradient(90deg, rgba(249,191,191,1) 0%, rgba(192,229,222,1) 74%);
+  overflow-x: hidden;
 }
 
 body {
