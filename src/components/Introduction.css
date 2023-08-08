@@ -1,0 +1,19 @@
+.intro-wrap {
+    width: 90%;
+}
+
+.intro-paragraph {
+    font-family: Georgia, serif;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .intro-paragraph { line-height: 23px;}
+}
+
+@media screen and (min-width: 700px) {
+    
+    .intro-wrap { width: 60%; }
+    
+}

@@ -1,3 +1,4 @@
+import React from 'react';
 import './Home.css';
 import mediumImage from '../../assets/pictures/pexels-moose-photos-1037992.jpg';
 import smallImage from '../../assets/pictures/pexels-small-moose-photos-1037992.jpg';
@@ -7,7 +8,7 @@ import VoiceServices from '../../components/VoiceServices';
 
 
 function Home() {
-    // useState to alternate between different picture sizes dependanat on screen width
+    // useState to alternate between different picture sizes dependent on screen width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {

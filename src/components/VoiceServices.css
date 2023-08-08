@@ -9,10 +9,13 @@ ul {
 
 h3 {
     font-size: 29px;
+    font-family: 'Atma', cursive;
+    font-weight: normal;
 }
 
 /* Main component / outer wrapper */
 .servicesWrapper {
+    color: #090a42fc;
     font-family: Georgia, serif;
     background-color: #20303e1a;
     border-radius: 20px;
@@ -69,21 +72,28 @@ button[type="button"] {
     color: #333;
 }
 
+/* width queries --------------------------------------------------------------- */
+
 @media screen and (max-width: 600px) {
     .services-list-wrap {
         width: 90%;
     }
 }
 
+/* ------------------------------------------------------------------------------- */
+
+/* height queries ------------------------------------------------------------------ */
+
 @media screen and (max-height: 620px) {
     .servicesWrapper {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 }
 
 @media screen and (min-height: 620px) {
     .servicesWrapper {
-        margin-top: 32%;
+        margin-top: 25%;
+        margin-bottom: 15px;
     }
 }
 
@@ -98,3 +108,16 @@ button[type="button"] {
         margin-top: 40%;
     }
 }
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* width AND height queries -------------------------------------------------------------- */
+
+/* @media screen and (min-width: 600px) and (max-height: 400px) {
+    .servicesWrapper {
+        margin-top: 10%;
+    }
+} */
+
+/* ----------------------------------------------------------------------------------------- */

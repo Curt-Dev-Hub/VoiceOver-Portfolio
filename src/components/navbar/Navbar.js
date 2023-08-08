@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 import crown from '../../assets/crown.png';
@@ -26,27 +26,18 @@ function Navbar() {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     }
 
-    
-    const handleIconClick = () => {
-        setShowXMark(!showXMark);
-    }
-
     return (
         <div className="nav-container">
-            <nav>
-                {/* <Link to='' >
-                        <img className='homeLogoLink' src={'../assets/crown.png'} width="60" height="60" alt="Logo"/>
-                </Link> */}
-
-                
+            <nav> {/* nav element contains elements for both desktop and mobile - visibility for these is controlled by width  */ }
                 <div className="logo">
-                    <img alt="Curtis King Logo" src={crown} width={windowWidth > 500 ? "60" : "30"} height={windowWidth > 500? "60" : "30"} />
+                    <Link to='/'>
+                        <img alt="Curtis King Logo" src={crown} width={windowWidth > 500 ? "60" : "30"} height={windowWidth > 500? "60" : "30"} />
+                    </Link>
                 </div>
-
                 <ul className="desktop-menu">
                     
-                    {/* <li>
-                        <Link to=''>Home</Link>
+                    <li>
+                        <Link to='/'>HOME</Link>
                     </li>
                     <li>
                         <Link to=''>DEMOS</Link>
@@ -55,66 +46,44 @@ function Navbar() {
                         <Link to=''>ABOUT</Link>
                     </li>
                     <li>
-                        <Link to=''>Contact Me</Link>
-                    </li> */}
-                    
-                    {/* !have taken logo div out from here! */}
-
-                    <li>
-                        HOME
-                    </li>
-                    <li>
-                        DEMOS
-                    </li>
-                    <li>
-                        ABOUT
-                    </li>
-                    <li>
-                        CONTACT ME
+                        <Link to='/contact-page'>CONTACT ME</Link>
                     </li>
                 </ul>
-                {/* <ul className="mobile-menu">
-                    {showXMark ? (
-                    <FaBars className="bars-icon" onClick={handleIconClick} />
-                    ) : (
-                    <FaTimes className="xmark-icon" onClick={handleIconClick} />
-                    )} */}
 
-                    {/* have added in another state variable here */}
-
-                    {/* MArk 2 changes 🙄 */}
-                    
-                {/* <ul className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-                    {isMobileMenuOpen ? (
-                <FaTimes className="xmark-icon" onClick={toggleMobileMenu} />
-                ) : (
-                    <FaBars className="bars-icon" onClick={toggleMobileMenu} />
-                )}
-                    <li>HOME</li>
+                             {/* mobile screen dropdonw menu -------------------- */}
+                <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+                    {isMobileMenuOpen ? <FaTimes className="xmark-icon" /> : <FaBars className="bars-icon" />}
+                </div>
+                <ul className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
+                    <li>
+                        <Link to='/'>HOME</Link>
+                    </li>
                     <li>DEMOS</li>
                     <li>ABOUT</li>
-                    <li>CONTACT ME</li>
-                </ul> */}
-                             {/* mobile screen dropdonw menu -------------------- */}
-            <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-                {isMobileMenuOpen ? <FaTimes className="xmark-icon" /> : <FaBars className="bars-icon" />}
-            </div>
-            <ul className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-                <li>HOME</li>
-                <li>DEMOS</li>
-                <li>ABOUT</li>
-                <li>CONTACT ME</li>
-            </ul>
+                    <li>
+                        <Link to='/contact-page'>CONTACT ME</Link>
+                    </li>
+                </ul>
                     {/* ---------------------------------------------------------- */}
 
             </nav>
+            {/* wrapper for contacts section of navbar */}
             <div className="contact-container">
                 <div className="social-media">
-                    <FaLinkedin className='linkedin-icon icons'  />
-                    <FaTwitter className='twitter-icon icons' />
-                    <FaInstagram className='insta-icon icons'/>
-                    <FaPinterest className='pinterest-icon icons' />
+                    <a href="https://www.linkedin.com/">
+                        <FaLinkedin className='linkedin-icon icons' />
+                    </a>
+                    <a href="https://twitter.com/">
+                        <FaTwitter className='twitter-icon icons' />
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <FaInstagram className='insta-icon icons'/>
+                    </a>
+                    <a href="https://www.pinterest.com/">
+                        <FaPinterest className='pinterest-icon icons' />
+                    </a>
                 </div>
+
                 <div className="email-container">
                     <p className="paragraph-email">
                         <FaEnvelope className="envelope-icon icons" />

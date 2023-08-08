@@ -106,9 +106,13 @@ nav .mobile-menu {
     color: aliceblue;
 }
 
+nav .mobile-menu a {
+    justify-content: center;
+}
+
 nav .mobile-menu.open {
     /* this may need to be adjusted to match the true height of the menu */
-    height: 216px;
+    height: 245px;
 }
 
 nav .mobile-menu {
