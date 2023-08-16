@@ -1,0 +1,54 @@
+@import-normalize;
+
+* { box-sizing: border-box; } 
+
+
+html {
+  width: 100vw;
+  background: rgb(249,191,191);
+  background: linear-gradient(90deg, rgba(249,191,191,1) 0%, rgba(192,229,222,1) 74%);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: inherit;
+}
+
+h1 {
+  letter-spacing: 11px;
+}
+
+h2 {
+  font-weight: 900;
+  text-align: center;
+}
+
+h2, h3 {
+  font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Indie Flower';
+  src: local('Indie Flower'), url(./fonts/IndieFlower-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Atma';
+  src: local('Atma') url(./fonts/Atma-Medium.ttf);
+}
+

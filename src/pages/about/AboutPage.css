@@ -1,0 +1,21 @@
+.aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
+
+.intro-paragraph, .about-paragraph-main {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 31px;
+    color: #222;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 700px) {
+    .intro-paragraph, .about-paragraph-main {
+        font-size: 17px;
+    }
+}

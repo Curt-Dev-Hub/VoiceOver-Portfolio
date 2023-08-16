@@ -1,0 +1,18 @@
+audio {
+    margin: 4px;
+}
+
+.test {
+    font-size: 100px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.media-player-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+}

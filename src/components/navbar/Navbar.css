@@ -1,0 +1,234 @@
+nav {
+    /* background-color: #7dc2f0; */
+    color: rgb(8, 25, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* styling for social icons ----------------------------------------------------------------- */
+
+.linkedin-icon {
+    color: midnightblue;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.twitter-icon {
+    color: dodgerblue;
+}
+
+.insta-icon {
+    background-image: linear-gradient(to top right,#f9ce34,#ee2a7b,#6228d7);
+    border-radius: 5px;
+}
+
+.pinterest-icon {
+    color: red;
+    background: aliceblue;
+    border-radius: 20px;
+}
+/* --------------------------------------------------------------------------- */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* wrapper for all contact links */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* a tag styling for email mailto */
+.email-a {
+    font-family:monospace;
+    font-size: 1rem;
+    text-decoration: none;
+    vertical-align: super;
+    color: inherit;
+}
+
+/* styling all icons in component */
+.icons {
+    font-size: 25px;
+    margin: 3px;
+}
+
+/* vertically align envelope icon and paragraph element */
+.paragraph-email {
+    margin: 3px;
+    display: inline-flex;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+  
+nav .desktop-menu {
+    font-family: 'Indie Flower', cursive;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    /* gap: 1rem; */ /* can be reduced to 0.5 for better spacing on smaller screens */
+    gap: 2%;
+}
+
+nav .mobile-menu {
+    font-family: 'Indie Flower', cursive;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 46px;  /* can reduce this if necessary */
+    left: 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: #05102fcf;
+    padding: 0; /* remove padding from left of ul container */
+    width: 100vw;
+    /* properties added in for slide effect */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    color: aliceblue;
+}
+
+nav .mobile-menu a {
+    justify-content: center;
+}
+
+nav .mobile-menu.open {
+    /* this may need to be adjusted to match the true height of the menu */
+    height: 245px;
+}
+
+nav .mobile-menu {
+    transform: translateX(0);
+}
+
+nav > .mobile-menu > li { /* will need to add anchor to this - routing */
+    width: 100vw;
+    padding: 1rem 0;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bolder;
+    border-bottom: 1px solid dodgerblue;
+}
+
+nav > .mobile-menu > li { /* will need to add anchor to this - routing*/
+    opacity: 1;
+}
+
+nav li {
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+nav li.active {
+    background-color: #777;
+}
+  
+nav li:hover {
+    background-color: #d7196982;
+}
+
+.envelope-icon {
+    color: ghostwhite;
+}
+
+/* make sure anchor sits centrally around icons and have sufficient padding */
+
+.social-media > a {
+    display: inline-block;
+    padding-right: 4px;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav > .desktop-menu {
+        display: none;
+    }
+
+    nav > .mobile-menu {
+        display: flex;
+    }
+/* change height and layout of nav and background image*/
+    .nav-container {
+        flex-direction: column;
+        height: 135px;
+        padding: 7px;
+    }
+
+    .contact-container {
+        align-self: center;
+        align-items: center;
+    }
+
+    nav {
+        gap: 1rem;
+        padding: 0 4px;
+    }
+
+    .header-image {
+        height: 135px
+    }
+
+    nav > .mobile-menu.open {
+        top: 109px;
+    }
+
+    .mobile-menu-icon {
+        position: fixed;
+        right: 5px;
+        top: 5px;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+
+    .bars-icon, .xmark-icon {
+        display: none;
+    }
+
+    nav {
+        width: 55%;
+    }
+
+    .contact-container {
+        width: 25%;
+    }
+}
+
+
+@media screen and (min-width: 830px) {
+
+    nav {
+        width: 66%;
+    }
+
+    nav > .desktop-menu {
+        gap: 8%;
+    }
+
+    .desktop-menu {
+        width: 70%;
+    }
+}
