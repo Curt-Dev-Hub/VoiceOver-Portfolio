@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/VoiceOver-Portfolio/static/css/main.c77bb418.css",
+    "main.js": "/VoiceOver-Portfolio/static/js/main.a4439b5b.js",
+    "static/css/423.9042b047.chunk.css": "/VoiceOver-Portfolio/static/css/423.9042b047.chunk.css",
+    "static/js/423.de4cc1e2.chunk.js": "/VoiceOver-Portfolio/static/js/423.de4cc1e2.chunk.js",
+    "static/css/448.99c2f2b8.chunk.css": "/VoiceOver-Portfolio/static/css/448.99c2f2b8.chunk.css",
+    "static/js/448.e9b18ea5.chunk.js": "/VoiceOver-Portfolio/static/js/448.e9b18ea5.chunk.js",
+    "static/css/584.0869ce58.chunk.css": "/VoiceOver-Portfolio/static/css/584.0869ce58.chunk.css",
+    "static/js/584.96019acc.chunk.js": "/VoiceOver-Portfolio/static/js/584.96019acc.chunk.js",
+    "static/js/787.6ae99282.chunk.js": "/VoiceOver-Portfolio/static/js/787.6ae99282.chunk.js",
+    "static/media/Surfer_Guy.mp3": "/VoiceOver-Portfolio/static/media/Surfer_Guy.532842c512b826cc79ef.mp3",
+    "static/media/FunkyAccent1.mp3": "/VoiceOver-Portfolio/static/media/FunkyAccent1.cbaa15cb181b06935ce1.mp3",
+    "static/media/Mature Gent_Advert.mp3": "/VoiceOver-Portfolio/static/media/Mature Gent_Advert.ea8bc6772bbab7a8cc32.mp3",
+    "static/media/FunZone_CharacterAdvert.mp3": "/VoiceOver-Portfolio/static/media/FunZone_CharacterAdvert.11e7e27576870ab90583.mp3",
+    "static/media/Distinguished_Voice.mp3": "/VoiceOver-Portfolio/static/media/Distinguished_Voice.6fb3658b8bff398e90f2.mp3",
+    "static/media/Glaucoma_Explainer.mp3": "/VoiceOver-Portfolio/static/media/Glaucoma_Explainer.c4c6af01f545f49db2d0.mp3",
+    "static/media/animeImage.jpg": "/VoiceOver-Portfolio/static/media/animeImage.ba3ed375ded28f4da5ad.jpg",
+    "static/media/Atma-Medium.ttf": "/VoiceOver-Portfolio/static/media/Atma-Medium.a1ff2e0792ed00b8b4e7.ttf",
+    "static/media/microphone-removebg-preview.png": "/VoiceOver-Portfolio/static/media/microphone-removebg-preview.3f3056122ed305afa348.png",
+    "static/media/IndieFlower-Regular.ttf": "/VoiceOver-Portfolio/static/media/IndieFlower-Regular.599d26584b9afc1d20b1.ttf",
+    "static/media/pexels-moose-photos-1037992.jpg": "/VoiceOver-Portfolio/static/media/pexels-moose-photos-1037992.7b4bf52548922cef274d.jpg",
+    "static/media/pexels-small-moose-photos-1037992.jpg": "/VoiceOver-Portfolio/static/media/pexels-small-moose-photos-1037992.e84e0e783d9090ac5bbc.jpg",
+    "index.html": "/VoiceOver-Portfolio/index.html",
+    "main.c77bb418.css.map": "/VoiceOver-Portfolio/static/css/main.c77bb418.css.map",
+    "main.a4439b5b.js.map": "/VoiceOver-Portfolio/static/js/main.a4439b5b.js.map",
+    "423.9042b047.chunk.css.map": "/VoiceOver-Portfolio/static/css/423.9042b047.chunk.css.map",
+    "423.de4cc1e2.chunk.js.map": "/VoiceOver-Portfolio/static/js/423.de4cc1e2.chunk.js.map",
+    "448.99c2f2b8.chunk.css.map": "/VoiceOver-Portfolio/static/css/448.99c2f2b8.chunk.css.map",
+    "448.e9b18ea5.chunk.js.map": "/VoiceOver-Portfolio/static/js/448.e9b18ea5.chunk.js.map",
+    "584.0869ce58.chunk.css.map": "/VoiceOver-Portfolio/static/css/584.0869ce58.chunk.css.map",
+    "584.96019acc.chunk.js.map": "/VoiceOver-Portfolio/static/js/584.96019acc.chunk.js.map",
+    "787.6ae99282.chunk.js.map": "/VoiceOver-Portfolio/static/js/787.6ae99282.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c77bb418.css",
+    "static/js/main.a4439b5b.js"
+  ]
+}
