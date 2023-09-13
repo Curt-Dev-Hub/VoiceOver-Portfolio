@@ -1,11 +1,13 @@
 import Introduction from "../../components/Introduction";
 import './AboutPage.css';
+import animeMe from "../../assets/pictures/animeImage.jpg";
 
 
 export default function AboutPage() {
     return (
         <div className="aboutWrapper">
             <Introduction />
+            <img src={ animeMe } alt="Cartoon version of me" className="anime_image"></img>
             {/* container for main about component elements */}
             <div className="inner-container">
                 <h3>A Bit About My Background</h3>

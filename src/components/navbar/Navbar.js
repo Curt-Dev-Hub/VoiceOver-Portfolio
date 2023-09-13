@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
-import crown from '../../assets/crown.png';
+import crown from '../../assets/pictures/crown.png';
 
 
 
@@ -15,9 +15,6 @@ function Navbar() {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
-    // use useState to handle user click in .mobile-menu and adjust which icon is rendered
-    const [showXMark, setShowXMark] = useState(true);
 
     // state for controlling the visibility of the mobile menu
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -40,6 +40,8 @@ hr {
     box-shadow: 10px 10px 15px #333;
     border-radius: 70px;
     transition: all 0.3s ease-in;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* main component wrapper --------------------------------------------- */

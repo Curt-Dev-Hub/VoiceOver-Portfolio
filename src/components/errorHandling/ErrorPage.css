@@ -1,0 +1,9 @@
+.error-page {
+    display: flex;
+    align-items: center;
+}
+
+.error-message {
+    font-size: 36px;
+    font: 'atma' cursive;
+}

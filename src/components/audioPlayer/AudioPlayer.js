@@ -1,31 +1,35 @@
 import React, { useEffect, useState } from "react";
 import './AudioPlayer.css';
-import nelly from '../../assets/audio/Nelly - Hot in Herre [Radio Edit].mp3';
-import alpine from '../../assets/audio/alpine-gasoline_2013-03-11-083744.128.mp3';
-import skeelo from '../../assets/audio/Skee-Lo - I Wish.mp3';
-import wiley from '../../assets/audio/Wiley - Pies.mp3';
+import { v4 as uuidv4 } from 'uuid';
+
+import accent1 from '../../assets/audio/accents/FunkyAccent1.mp3';
+import animation1 from '../../assets/audio/animation/Distinguished_Voice.mp3';
+import character1 from '../../assets/audio/character/FunZone_CharacterAdvert.mp3';
+import character2 from '../../assets/audio/character/Mature Gent_Advert.mp3';
+import character3 from '../../assets/audio/character/Surfer_Guy.mp3';
+import explainer1 from '../../assets/audio/explainer/Glaucoma_Explainer.mp3';
 
 
 const audioFiles = [
     {
         id: 1,
         name: 'Animation',
-        audioSrc: nelly
+        audioSrc: animation1
     },
     {
         id: 2,
-        name: 'Character',
-        audioSrc: alpine
+        name: 'Accents',
+        audioSrc: accent1
     },
     {
-        id:3,
+        id: 3,
         name: 'Character',
-        audioSrc: skeelo
+        audioSrc: [character1,character2,character3]
     },
     {
-        id: 4,
-        name: 'eLearning',
-        audioSrc: wiley,
+        id:4,
+        name: 'Explainer',
+        audioSrc: explainer1
     }
 ];
 
@@ -43,23 +47,21 @@ export default function AudioPlayer({style}) {
             <h3 className="demo-h2">Play audio samples here</h3>
 
             <div className="media-player-wrap">
-
                 {audioFiles.map((audio) => (
                     audio.name === selectedStyle && ( 
-                        <audio key={audio.id} controls>
-                            <source src={audio.audioSrc} type="audio/mpeg" />    
-                        </audio>
+                        Array.isArray(audio.audioSrc) ? 
+                            audio.audioSrc.map(e => (
+                                <audio key={uuidv4()} controls>
+                                    <source src={e} type="audio/mpeg" />    
+                                </audio>    
+                            ))
+                        :
+                            <audio key={audio.id} controls>
+                                <source src={audio.audioSrc} type="audio/mpeg" />    
+                            </audio>    
                 )))}
-                {/* <audio controls>
-                    <source src={skeelo} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
-
-                <audio controls>
-                    <source src={wiley} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio> */}
             </div>
         </div>
     );
 }
+

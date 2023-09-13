@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './assets/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HashRouter } from 'react-router-dom';
+import { ErrorBoundary } from 'react-error-boundary';
+import ErrorPage from '../src/components/errorHandling/ErrorPage'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+      <HashRouter>
+        <ErrorBoundary FallbackComponent={ErrorPage}>
+          <App />
+        </ErrorBoundary>  
+      </HashRouter>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

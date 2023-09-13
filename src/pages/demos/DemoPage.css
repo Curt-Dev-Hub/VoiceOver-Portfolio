@@ -32,7 +32,6 @@
 
 .voice-style-btn:active {
   transform: scale(0.95);
-  /* background: rgba(0, 0, 255, 0.521); */
 }
   
 .demo-wrapper {
