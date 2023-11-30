@@ -1,6 +1,6 @@
 import Introduction from "../../components/Introduction";
 import './AboutPage.css';
-import animeMe from "../../assets/pictures/animeImage.jpg";
+import animeMe from "../../assets/pictures/Smart Picture - Edit.jpg";
 
 
 export default function AboutPage() {

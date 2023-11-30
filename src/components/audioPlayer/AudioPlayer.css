@@ -24,3 +24,7 @@ audio {
     max-width: min-content;
 }
 
+.audioPlayerLabel {
+    margin-bottom: 5px;    
+}
+

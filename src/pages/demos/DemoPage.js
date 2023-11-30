@@ -26,10 +26,13 @@ import AudioPlayer from "../../components/audioPlayer/AudioPlayer";
 //     );    
 // }
 
-const voiceStyles = ['Animation', 'Character', 'eLearning', 'Explainer', 'Accents', 'Narration', 'Video_Game'];
+
+// 'Video Game' 'eLearning' - Removed Temporarily 
+
+const voiceStyles = ['Demo Reels', 'Animation', 'Character', 'Explainer', 'Accents', 'Narration'];
 
 export default function DemoPage() {
-    const [selectedStyle, setSelectedStyle] = useState("Animation");
+    const [selectedStyle, setSelectedStyle] = useState("Demo Reels");
 
     const handleClick = (style) => {
         setSelectedStyle(style);
