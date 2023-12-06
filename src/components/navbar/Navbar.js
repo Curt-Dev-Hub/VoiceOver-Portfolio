@@ -53,16 +53,16 @@ function Navbar() {
                 </div>
                 <ul className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
                     <li>
-                        <Link to='/'>HOME</Link>
+                        <Link to='/' onClick={toggleMobileMenu}>HOME</Link>
                     </li>
                     <li>
-                    <Link to='/voice-demo'>DEMOS</Link>
+                        <Link to='/voice-demo' onClick={toggleMobileMenu}>DEMOS</Link>
                     </li>
                     <li>
-                        <Link to='/about-page'>About</Link>
+                        <Link to='/about-page' onClick={toggleMobileMenu}>About</Link>
                     </li>
                     <li>
-                        <Link to='/contact-page'>CONTACT ME</Link>
+                        <Link to='/contact-page' onClick={toggleMobileMenu}>CONTACT ME</Link>
                     </li>
                 </ul>
                     {/* ---------------------------------------------------------- */}
@@ -71,18 +71,18 @@ function Navbar() {
             {/* wrapper for contacts section of navbar */}
             <div className="contact-container">
                 <div className="social-media">
-                    <a href="https://www.linkedin.com/in/curtking83">
+                    <a href="https://www.linkedin.com/in/curtking83" target="_blank">
                         <FaLinkedin className='linkedin-icon icons' />
                     </a>
-                    <a href="https://twitter.com/CDevlife">
+                    <a href="https://twitter.com/VoiceOverVibes" target="_blank">
                         <FaTwitter className='twitter-icon icons' />
                     </a>
-                    <a href="https://www.instagram.com/">
+                    {/* <a href="https://www.instagram.com/">
                         <FaInstagram className='insta-icon icons'/>
                     </a>
                     <a href="https://www.pinterest.com/">
                         <FaPinterest className='pinterest-icon icons' />
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="email-container">

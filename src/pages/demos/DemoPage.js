@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './DemoPage.css';
+import { v4 as uuidv4 } from 'uuid';
 import AudioPlayer from "../../components/audioPlayer/AudioPlayer";
 
 // const voiceStyles = ['Animation', 'Character', 'eLearning', 'Explainer', 'Accents', 'Narration', 'Video_Game'];
@@ -54,10 +55,10 @@ export default function DemoPage() {
                 <div className="buttons-wrapper">
                     <h3 className="demo-h2">Select a style ⬇️</h3>
                     {voiceStyles.map((style, index) => (
-                        <button autoFocus={index === 0} className="voice-style-btn" key={style} onClick={() => handleClick(style)}> {style} </button>
+                        <button autoFocus={index === 0} className="voice-style-btn" key={uuidv4()} onClick={() => handleClick(style)}> {style} </button>
                     ))}
                 </div>
-                {selectedStyle && <AudioPlayer style={selectedStyle} />}
+                {selectedStyle && <AudioPlayer key={uuidv4()} style={selectedStyle} />}
             </div>
         </div>
     );    

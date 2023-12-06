@@ -93,7 +93,7 @@ nav .mobile-menu {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 46px;  /* can reduce this if necessary */
+    top: 109px;  /* ensures height of mobile menu when opening and closing onclick is the same */
     left: 0;
     list-style-type: none;
     text-align: center;

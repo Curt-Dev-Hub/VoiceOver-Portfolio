@@ -60,23 +60,7 @@ export default function AudioPlayer({style}) {
         <div className="audio-wrapper">
             <h3 className="demo-h2">Play audio samples here</h3>
 
-            {/* <div className="media-player-wrap">
-                {audioFiles.map((audio) => (
-                    audio.name === selectedStyle && ( 
-                        Array.isArray(audio.audioSrc) ? 
-                            audio.audioSrc.map(e => {
-                                <audio key={uuidv4()} controls>
-                                    <source src={e} type="audio/mpeg" />    
-                                </audio>    
-                            })
-                            
-                        :
-                            <audio key={audio.id} controls>
-                                <source src={audio.audioSrc} type="audio/mpeg" />    
-                            </audio>    
-                )))}
-            </div> */}
-            <div className="media-player-wrap"> 
+            {/* <div className="media-player-wrap"> 
                 {audioFiles.map((audio) => ( 
                     audio.name === selectedStyle && ( Array.isArray(audio.audioSrc) ? 
                     audio.audioSrc.map(e => ( 
@@ -88,9 +72,29 @@ export default function AudioPlayer({style}) {
                     <> {selectedStyle ==="Demo Reels" ? 
                         <label key={uuidv4()} className="audioPlayerLabel">{audio.type}</label> : 
                             null} 
-                        <audio key={audio.id} controls> <source src={audio.audioSrc} type="audio/mpeg" /></audio>
+                        <audio key={uuidv4()} controls> <source src={audio.audioSrc} type="audio/mpeg" /></audio>
                     </> )))} 
+            </div> */}
+            
+            {/* ------------ Refactored to include div element with uuid key instead of fragment ------------------------ */}
+            <div className="media-player-wrap"> 
+                {audioFiles.map((audio) => ( 
+                    audio.name === selectedStyle && ( Array.isArray(audio.audioSrc) ? 
+                    audio.audioSrc.map(e => ( 
+                        <div key={uuidv4()}>
+                            {selectedStyle === "Demo Reels" ? 
+                            <label className="audioPlayerLabel">{audio.type}</label> : null} 
+                            <audio controls> <source src={e} type="audio/mpeg" /></audio>
+                        </div>
+                    )) : 
+                    <div key={uuidv4()}>
+                        {selectedStyle ==="Demo Reels" ? 
+                        <label className="audioPlayerLabel">{audio.type}</label> : null} 
+                        <audio controls> <source src={audio.audioSrc} type="audio/mpeg" /></audio>
+                    </div>
+                )))} 
             </div>
+
         </div>
     );
     
