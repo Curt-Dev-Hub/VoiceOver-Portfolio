@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/VoiceOver-Portfolio/static/css/main.c77bb418.css",
-    "main.js": "/VoiceOver-Portfolio/static/js/main.76e98a96.js",
+    "main.css": "/VoiceOver-Portfolio/static/css/main.a12f888b.css",
+    "main.js": "/VoiceOver-Portfolio/static/js/main.2982c128.js",
     "static/css/423.9042b047.chunk.css": "/VoiceOver-Portfolio/static/css/423.9042b047.chunk.css",
     "static/js/423.de4cc1e2.chunk.js": "/VoiceOver-Portfolio/static/js/423.de4cc1e2.chunk.js",
     "static/css/430.aab41e37.chunk.css": "/VoiceOver-Portfolio/static/css/430.aab41e37.chunk.css",
-    "static/js/430.a725e79d.chunk.js": "/VoiceOver-Portfolio/static/js/430.a725e79d.chunk.js",
+    "static/js/430.e1b5e909.chunk.js": "/VoiceOver-Portfolio/static/js/430.e1b5e909.chunk.js",
     "static/css/283.72798760.chunk.css": "/VoiceOver-Portfolio/static/css/283.72798760.chunk.css",
     "static/js/283.5a5dea58.chunk.js": "/VoiceOver-Portfolio/static/js/283.5a5dea58.chunk.js",
     "static/js/787.6ae99282.chunk.js": "/VoiceOver-Portfolio/static/js/787.6ae99282.chunk.js",
@@ -25,18 +25,18 @@
     "static/media/pexels-moose-photos-1037992.jpg": "/VoiceOver-Portfolio/static/media/pexels-moose-photos-1037992.7b4bf52548922cef274d.jpg",
     "static/media/pexels-small-moose-photos-1037992.jpg": "/VoiceOver-Portfolio/static/media/pexels-small-moose-photos-1037992.e84e0e783d9090ac5bbc.jpg",
     "index.html": "/VoiceOver-Portfolio/index.html",
-    "main.c77bb418.css.map": "/VoiceOver-Portfolio/static/css/main.c77bb418.css.map",
-    "main.76e98a96.js.map": "/VoiceOver-Portfolio/static/js/main.76e98a96.js.map",
+    "main.a12f888b.css.map": "/VoiceOver-Portfolio/static/css/main.a12f888b.css.map",
+    "main.2982c128.js.map": "/VoiceOver-Portfolio/static/js/main.2982c128.js.map",
     "423.9042b047.chunk.css.map": "/VoiceOver-Portfolio/static/css/423.9042b047.chunk.css.map",
     "423.de4cc1e2.chunk.js.map": "/VoiceOver-Portfolio/static/js/423.de4cc1e2.chunk.js.map",
     "430.aab41e37.chunk.css.map": "/VoiceOver-Portfolio/static/css/430.aab41e37.chunk.css.map",
-    "430.a725e79d.chunk.js.map": "/VoiceOver-Portfolio/static/js/430.a725e79d.chunk.js.map",
+    "430.e1b5e909.chunk.js.map": "/VoiceOver-Portfolio/static/js/430.e1b5e909.chunk.js.map",
     "283.72798760.chunk.css.map": "/VoiceOver-Portfolio/static/css/283.72798760.chunk.css.map",
     "283.5a5dea58.chunk.js.map": "/VoiceOver-Portfolio/static/js/283.5a5dea58.chunk.js.map",
     "787.6ae99282.chunk.js.map": "/VoiceOver-Portfolio/static/js/787.6ae99282.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c77bb418.css",
-    "static/js/main.76e98a96.js"
+    "static/css/main.a12f888b.css",
+    "static/js/main.2982c128.js"
   ]
 }
